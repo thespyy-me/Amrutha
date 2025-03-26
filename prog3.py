@@ -1,8 +1,10 @@
+def info():
+    name = input("enter urname")
+    email = input("enter email")
+    address = input("enter address")
+    phno = input("enter phone no")
 
-name = input("enter urname")
-email = input("enter email")
-address = input("enter address")
-phno = input("enter phone no")
+    return name,email,address,phno
 
 
 def print_info(name,email,address,phno):
@@ -14,8 +16,8 @@ def print_info(name,email,address,phno):
     print("phone number:",phno)
 
 
-
-print_info(name,email,address,phno)
+name,address,email,phone = info()
+print_info(name,email,address,phone)
 
     
                   
